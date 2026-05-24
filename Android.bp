@@ -22,25 +22,25 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.boot@1.2.droidlogic",
+	name: "android.hardware.boot-service.droidlogic.xml",
 	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.boot@1.2.droidlogic.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.boot-service.droidlogic.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.dumpstate@1.1-service.droidlogic",
+	name: "android.hardware.gatekeeper-service.amlogic.xml",
 	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service.droidlogic.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.amlogic.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.graphics.composer@2.4-service.droidlogic",
+	name: "android.hardware.graphics.composer@2.4-service.droidlogic.xml",
 	owner: "amlogic",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.graphics.composer@2.4-service.droidlogic.xml",
 	filename_from_src: true,
@@ -49,43 +49,97 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.thermal@2.0-service.droidlogic",
+	name: "android.hardware.media.c2@1.2-service.xml",
 	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.droidlogic.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.media.c2@1.2-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.usb.gadget@1.2-service.droidlogic",
+	name: "android.hardware.tv.hdmi.cec-service.droidlogic.xml",
 	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb.gadget@1.2-service.droidlogic.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.tv.hdmi.cec-service.droidlogic.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "lights",
+	name: "android.hardware.tv.hdmi.connection-service.droidlogic.xml",
 	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/lights.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.tv.hdmi.connection-service.droidlogic.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.4-service.widevine",
+	name: "android.hardware.usb-service.xml",
 	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "memtrack-amlogic",
+	name: "android.hardware.usb.gadget-service.xml",
+	owner: "amlogic",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb.gadget-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "dumpstate-default.droidlogic.xml",
+	owner: "amlogic",
+	src: "proprietary/vendor/etc/vintf/manifest/dumpstate-default.droidlogic.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_allocator.xml",
+	owner: "amlogic",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_allocator.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm-service.widevine.xml",
+	owner: "amlogic",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_mapper.xml",
+	owner: "amlogic",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_mapper.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "mapper.arm.xml",
+	owner: "amlogic",
+	src: "proprietary/vendor/etc/vintf/manifest/mapper.arm.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "memtrack-amlogic.xml",
 	owner: "amlogic",
 	src: "proprietary/vendor/etc/vintf/manifest/memtrack-amlogic.xml",
 	filename_from_src: true,
@@ -94,7 +148,16 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.amlogic.hardware.screencontrol@1.0",
+	name: "thermal.xml",
+	owner: "amlogic",
+	src: "proprietary/vendor/etc/vintf/manifest/thermal.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.amlogic.hardware.screencontrol@1.0.xml",
 	owner: "amlogic",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.amlogic.hardware.screencontrol@1.0.xml",
 	filename_from_src: true,
@@ -103,7 +166,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.amlogic.hardware.subtitleserver@1.0",
+	name: "vendor.amlogic.hardware.subtitleserver@1.0.xml",
 	owner: "amlogic",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.amlogic.hardware.subtitleserver@1.0.xml",
 	filename_from_src: true,
@@ -112,7 +175,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.oemlock@1.0-service.droidlogic",
+	name: "android.hardware.oemlock@1.0-service.droidlogic.xml",
 	owner: "amlogic",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.oemlock@1.0-service.droidlogic.xml",
 	filename_from_src: true,
@@ -121,16 +184,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.security.keymint-service.amlogic",
-	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.amlogic.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.4-service.playready",
+	name: "manifest_android.hardware.drm@1.4-service.playready.xml",
 	owner: "amlogic",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.playready.xml",
 	filename_from_src: true,
