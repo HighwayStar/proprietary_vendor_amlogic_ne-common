@@ -143,6 +143,8 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libjpegenc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegenc_api.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/liblog_cout.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblog_cout.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmad.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmad.so \
+    vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_dmabufmanage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_dmabufmanage.so \
+    vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_hardware_demux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_hardware_demux.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_mediasync.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_mediasync.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_passthrough.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_passthrough.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_resman.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_resman.so \
