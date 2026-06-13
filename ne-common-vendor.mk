@@ -18,11 +18,10 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.audio.service-droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service-droidlogic \
     vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-droidlogic \
     vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.boot-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.boot-service \
-    vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.drm-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.widevine \
     vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.dumpstate-service.droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.dumpstate-service.droidlogic \
     vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper-service.amlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper-service.amlogic \
     vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.graphics.allocator-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator-service \
-    vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.4-service.droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.4-service.droidlogic \
+    vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.graphics.composer@3.2-service.droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@3.2-service.droidlogic \
     vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-service \
     vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.memtrack-service.droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack-service.droidlogic \
     vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.thermal-service.droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal-service.droidlogic \
@@ -55,10 +54,9 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.audio.service-droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service-droidlogic.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-droidlogic.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.boot-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.droidlogic.rc \
-    vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.amlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.amlogic.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service.rc \
-    vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.4-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.4-service.droidlogic.rc \
+    vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.2-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.2-service.droidlogic.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-service.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.tv.hdmi.cec-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tv.hdmi.cec-service.droidlogic.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.tv.hdmi.connection-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tv.hdmi.connection-service.droidlogic.rc \
@@ -84,11 +82,13 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/etc/lowmemorykiller.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lowmemorykiller.txt \
     vendor/amlogic/ne-common/proprietary/vendor/etc/lowmemorykiller_2G.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lowmemorykiller_2G.txt \
     vendor/amlogic/ne-common/proprietary/vendor/etc/lowmemorykiller_512M.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lowmemorykiller_512M.txt \
+    vendor/amlogic/ne-common/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/amlogic/ne-common/proprietary/vendor/etc/mesondisplay.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mesondisplay.cfg \
     vendor/amlogic/ne-common/proprietary/vendor/etc/permissions/android.software.cant_save_state.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.cant_save_state.xml \
     vendor/amlogic/ne-common/proprietary/vendor/etc/permissions/droidlogic.software.core.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/droidlogic.software.core.xml \
     vendor/amlogic/ne-common/proprietary/vendor/etc/permissions/droidlogic.tv.software.core.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/droidlogic.tv.software.core.xml \
     vendor/amlogic/ne-common/proprietary/vendor/etc/remote.txt:$(TARGET_COPY_OUT_VENDOR)/etc/remote.txt \
+    vendor/amlogic/ne-common/proprietary/vendor/etc/resman.json:$(TARGET_COPY_OUT_VENDOR)/etc/resman.json \
     vendor/amlogic/ne-common/proprietary/vendor/etc/seccomp_policy/android.hardware.amlogic.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.amlogic.media.c2@1.2-extended-seccomp-policy \
     vendor/amlogic/ne-common/proprietary/vendor/etc/seccomp_policy/android.hardware.amlogic.media.c2@1.2-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.amlogic.media.c2@1.2-seccomp-policy \
     vendor/amlogic/ne-common/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -96,8 +96,8 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
     vendor/amlogic/ne-common/proprietary/vendor/etc/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
     vendor/amlogic/ne-common/proprietary/vendor/etc/wifi/p2p_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant.conf \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/android.hardware.graphics.composer@2.1-resources-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.1-resources-vendor.so \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/android.hardware.graphics.composer@2.2-resources-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.2-resources-vendor.so \
+    vendor/amlogic/ne-common/proprietary/vendor/lib/android.hardware.graphics.composer@2.1-resources-aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.1-resources-aidl.so \
+    vendor/amlogic/ne-common/proprietary/vendor/lib/android.hardware.graphics.composer@2.2-resources-aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.2-resources-aidl.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/arm.graphics-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V4-ndk.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/arm.graphics-V5-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V5-ndk.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
@@ -111,10 +111,10 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/lib/hw/vulkan.amlogic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.amlogic.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libAmlAudioOutPort.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAmlAudioOutPort.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libPQTableLD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPQTableLD.so \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/lib_amvenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_amvenc.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libadap_lcd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadap_lcd.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libadap_ld.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadap_ld.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libamaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libamaudioutils.so \
+    vendor/amlogic/ne-common/proprietary/vendor/lib/libamaudioutils_boot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libamaudioutils_boot.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libamgralloc_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libamgralloc_ext.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libaml_hal_lcd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaml_hal_lcd.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libaml_hal_ld.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaml_hal_ld.so \
@@ -131,26 +131,25 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libcodec2_aml_soft_video_decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_aml_soft_video_decoder.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libcodec2_aml_video_decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_aml_video_decoder.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libcodec2_aml_video_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_aml_video_encoder.so \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/libdewarp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdewarp.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libdroidaudiospdif.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdroidaudiospdif.so \
+    vendor/amlogic/ne-common/proprietary/vendor/lib/liberrormonitorclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/liberrormonitorclient.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libfaad.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfaad.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libfbc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfbc.so \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/libgdc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgdc.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libge2d-2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libge2d-2.0.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libhdmi_cec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmi_cec.so \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/libispaaa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libispaaa.so \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/libispaml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libispaml.so \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/libjpegenc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegenc_api.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/liblog_cout.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblog_cout.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmad.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmad.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_dmabufmanage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_dmabufmanage.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_hardware_demux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_hardware_demux.so \
+    vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_mediametrics.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_mediametrics.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_mediasync.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_mediasync.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_passthrough.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_passthrough.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_resman.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_resman.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_tsplayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_tsplayer.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_tunnelrenderer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_tunnelrenderer.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmediahal_videodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahal_videodec.so \
+    vendor/amlogic/ne-common/proprietary/vendor/lib/libmediaproxy_consumer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediaproxy_consumer.so \
+    vendor/amlogic/ne-common/proprietary/vendor/lib/libmediaproxy_producer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediaproxy_producer.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmemtrack-amlogic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmemtrack-amlogic.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmeson_display_adapter_remote.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmeson_display_adapter_remote.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libmeson_display_service.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmeson_display_service.so \
@@ -176,14 +175,9 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/lib/soundfx/libtreblebasswrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libtreblebasswrapper.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/soundfx/libvirtualsurround.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvirtualsurround.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/soundfx/libvirtualx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvirtualx.so \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/teetz/2088528d-102a-4716-b940-23fd9be04adf.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/2088528d-102a-4716-b940-23fd9be04adf.ta \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/teetz/526fc4fc-7ee6-4a12-96e3-83da9565bce8.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/526fc4fc-7ee6-4a12-96e3-83da9565bce8.ta \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/teetz/5f440c5c-87cc-4e97-9632-74e40a194a1f.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/5f440c5c-87cc-4e97-9632-74e40a194a1f.ta \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/teetz/d83c3c4a-9e8d-4e4e-ad30-9d40e137f689.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/d83c3c4a-9e8d-4e4e-ad30-9d40e137f689.ta \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/teetz/e92a43ab-b4c8-4450-aa12-b1516259613b.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/e92a43ab-b4c8-4450-aa12-b1516259613b.ta \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/teetz/ff2a4bea-ef6d-11e6-89cc-d4ae52a7b3b3.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/ff2a4bea-ef6d-11e6-89cc-d4ae52a7b3b3.ta \
     vendor/amlogic/ne-common/proprietary/vendor/lib/vendor.amlogic.display.meson_display_ipc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.display.meson_display_ipc@1.0.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/vendor.amlogic.hardware.droidvold@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.droidvold@1.0.so \
+    vendor/amlogic/ne-common/proprietary/vendor/lib/vendor.amlogic.hardware.errormonitor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.errormonitor@1.0.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/vendor.amlogic.hardware.screencontrol@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.screencontrol@1.0.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/vendor.amlogic.hardware.subtitleserver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.subtitleserver@1.0.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/vendor.amlogic.hardware.systemcontrol@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.systemcontrol@1.0.so \
@@ -192,11 +186,11 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor_dlkm/lib/modules/amlogic_fbc_lib.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/amlogic_fbc_lib.ko
 
 PRODUCT_PACKAGES += \
+    droidlogic-tv \
     droidlogic.software.core \
-    droidlogic.tv.software.core \
     android.hardware.boot-service.droidlogic.xml \
     android.hardware.gatekeeper-service.amlogic.xml \
-    android.hardware.graphics.composer@2.4-service.droidlogic.xml \
+    android.hardware.graphics.composer@3.2-service.droidlogic.xml \
     android.hardware.media.c2@1.2-service.xml \
     android.hardware.tv.hdmi.cec-service.droidlogic.xml \
     android.hardware.tv.hdmi.connection-service.droidlogic.xml \
@@ -204,7 +198,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb.gadget-service.xml \
     dumpstate-default.droidlogic.xml \
     manifest_allocator.xml \
-    manifest_android.hardware.drm-service.widevine.xml \
     manifest_mapper.xml \
     mapper.arm.xml \
     memtrack-amlogic.xml \
@@ -226,14 +219,9 @@ endif
 
 ifneq ($(TARGET_HAS_TEE),false)
 PRODUCT_COPY_FILES += \
-    vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.playready:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.playready \
     vendor/amlogic/ne-common/proprietary/vendor/bin/hw/android.hardware.oemlock@1.0-service.droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.oemlock@1.0-service.droidlogic \
-    vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.playready.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.playready.rc \
-    vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.oemlock@1.0-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.oemlock@1.0-service.droidlogic.rc \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/libplayready.so:$(TARGET_COPY_OUT_VENDOR)/lib/libplayready.so \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/libplayreadymediadrmplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libplayreadymediadrmplugin.so
+    vendor/amlogic/ne-common/proprietary/vendor/etc/init/android.hardware.oemlock@1.0-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.oemlock@1.0-service.droidlogic.rc
 
 PRODUCT_PACKAGES += \
-    android.hardware.oemlock@1.0-service.droidlogic.xml \
-    manifest_android.hardware.drm@1.4-service.playready.xml
+    android.hardware.oemlock@1.0-service.droidlogic.xml
 endif

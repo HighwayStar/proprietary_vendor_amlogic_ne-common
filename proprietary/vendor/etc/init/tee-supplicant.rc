@@ -1,6 +1,6 @@
 on early-init
-	insmod /vendor/lib/modules/modules/optee.ko
-	insmod /vendor/lib/modules/modules/optee_armtz.ko
+	insmod /vendor/lib/modules/optee.ko
+	insmod /vendor/lib/modules/optee_armtz.ko
 
 on late-init
 	start vendor.tee_supplicant

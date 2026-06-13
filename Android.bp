@@ -8,16 +8,16 @@ soong_namespace {
 }
 
 dex_import {
-	name: "droidlogic.software.core",
+	name: "droidlogic-tv",
 	owner: "amlogic",
-	jars: ["proprietary/vendor/framework/droidlogic.software.core.jar"],
+	jars: ["proprietary/vendor/framework/droidlogic-tv.jar"],
 	soc_specific: true,
 }
 
 dex_import {
-	name: "droidlogic.tv.software.core",
+	name: "droidlogic.software.core",
 	owner: "amlogic",
-	jars: ["proprietary/vendor/framework/droidlogic.tv.software.core.jar"],
+	jars: ["proprietary/vendor/framework/droidlogic.software.core.jar"],
 	soc_specific: true,
 }
 
@@ -40,9 +40,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.graphics.composer@2.4-service.droidlogic.xml",
+	name: "android.hardware.graphics.composer@3.2-service.droidlogic.xml",
 	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.graphics.composer@2.4-service.droidlogic.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.graphics.composer@3.2-service.droidlogic.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -112,15 +112,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm-service.widevine.xml",
-	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "manifest_mapper.xml",
 	owner: "amlogic",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_mapper.xml",
@@ -178,15 +169,6 @@ prebuilt_etc_xml {
 	name: "android.hardware.oemlock@1.0-service.droidlogic.xml",
 	owner: "amlogic",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.oemlock@1.0-service.droidlogic.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.4-service.playready.xml",
-	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.playready.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
