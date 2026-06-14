@@ -6,9 +6,15 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/amlogic/ne-common
 
 PRODUCT_COPY_FILES += \
-    vendor/amlogic/ne-common/proprietary/recovery/root/system/bin/systemcontrol_static:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/systemcontrol_static \
-    vendor/amlogic/ne-common/proprietary/recovery/root/system/lib/hw/android.hardware.boot@1.0-impl-1.2.droidlogic.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib/hw/android.hardware.boot@1.0-impl-1.2.droidlogic.so \
-    vendor/amlogic/ne-common/proprietary/recovery/root/system/lib/hw/android.hardware.fastboot@1.0-impl-amlogic.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib/hw/android.hardware.fastboot@1.0-impl-amlogic.so \
+    vendor/amlogic/ne-common/proprietary/recovery/root/system/bin/hw/android.hardware.boot-service_recovery:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hw/android.hardware.boot-service_recovery \
+    vendor/amlogic/ne-common/proprietary/recovery/root/system/bin/hw/android.hardware.fastboot-service.amlogic_recovery:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hw/android.hardware.fastboot-service.amlogic_recovery \
+    vendor/amlogic/ne-common/proprietary/recovery/root/system/etc/init/android.hardware.boot-service.droidlogic_recovery.rc:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/init/android.hardware.boot-service.droidlogic_recovery.rc \
+    vendor/amlogic/ne-common/proprietary/recovery/root/system/etc/init/android.hardware.fastboot-service.amlogic_recovery.rc:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/init/android.hardware.fastboot-service.amlogic_recovery.rc \
+    vendor/amlogic/ne-common/proprietary/recovery/root/system/etc/vintf/manifest/android.hardware.boot-service.droidlogic.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/vintf/manifest/android.hardware.boot-service.droidlogic.xml \
+    vendor/amlogic/ne-common/proprietary/recovery/root/system/etc/vintf/manifest/android.hardware.fastboot-service.amlogic.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/vintf/manifest/android.hardware.fastboot-service.amlogic.xml \
+    vendor/amlogic/ne-common/proprietary/recovery/root/system/lib/libsystemcontrolservice.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib/libsystemcontrolservice.so \
+    vendor/amlogic/ne-common/proprietary/recovery/root/system/lib/vendor.amlogic.hardware.systemcontrol@1.0.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib/vendor.amlogic.hardware.systemcontrol@1.0.so \
+    vendor/amlogic/ne-common/proprietary/recovery/root/system/lib/vendor.amlogic.hardware.systemcontrol@1.1.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib/vendor.amlogic.hardware.systemcontrol@1.1.so \
     vendor/amlogic/ne-common/proprietary/system_ext/lib/libsubtitlebinder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsubtitlebinder.so \
     vendor/amlogic/ne-common/proprietary/system_ext/lib/libsubtitlemanager_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsubtitlemanager_jni.so \
     vendor/amlogic/ne-common/proprietary/system_ext/lib/vendor.amlogic.hardware.subtitleserver@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.amlogic.hardware.subtitleserver@1.0.so \
