@@ -140,7 +140,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libhardware",
-                "android.hardware.graphics.common-V4-ndk",
+                "android.hardware.graphics.common-V6-ndk",
                 "libbase",
                 "libdmabufheap",
                 "libz",
@@ -177,7 +177,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libhardware",
                 "libcutils",
-                "android.hardware.graphics.common-V4-ndk",
+                "android.hardware.graphics.common-V6-ndk",
                 "android.hardware.graphics.common@1.2",
                 "liblog",
                 "libbase",
@@ -211,7 +211,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libdmabufheap",
                 "arm.graphics-V5-ndk",
-                "android.hardware.graphics.common-V4-ndk",
+                "android.hardware.graphics.common-V6-ndk",
                 "android.hardware.graphics.common@1.2",
                 "libbase",
                 "libhardware",
@@ -268,7 +268,7 @@ cc_prebuilt_library_shared {
                 "libamlspeed",
                 "libalsautils",
                 "libdmabufheap",
-                "android.hardware.bluetooth.audio-V3-ndk",
+                "android.hardware.bluetooth.audio-V5-ndk",
                 "libbluetooth_audio_session_aidl",
                 "libbinder_ndk",
                 "libbase",
@@ -391,7 +391,7 @@ cc_prebuilt_library_shared {
                 "libdmabufheap",
                 "libnativewindow",
                 "arm.graphics-V5-ndk",
-                "android.hardware.graphics.common-V4-ndk",
+                "android.hardware.graphics.common-V6-ndk",
                 "libhidlbase",
                 "libdrm",
                 "android.hardware.graphics.mapper@4.0",
@@ -432,45 +432,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libui",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vulkan.amlogic",
-    owner: "amlogic",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vulkan.amlogic.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.allocator-V2-ndk",
-                "libbinder_ndk",
-                "libnativewindow",
-                "libutils",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloctypes",
-                "libhidlbase",
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "android.hardware.graphics.common-V4-ndk",
-                "libbase",
-                "libdmabufheap",
-                "libz",
                 "libc++",
                 "libc",
                 "libm",
@@ -815,7 +776,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libamlaudiohal@7.0.so",
             ],
             shared_libs: [
-                "android.media.audio.common.types-V2-cpp",
+                "android.media.audio.common.types-V4-cpp",
                 "av-types-aidl-cpp",
                 "libamlaudiohal_deathhandler@7.0",
                 "libaudioclient_aidl_conversion",
@@ -1762,7 +1723,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.memtrack-V1-ndk",
-                "libbase-v33",
+                "libbase",
                 "libbinder_ndk",
                 "liblog",
                 "libc++",
@@ -2064,6 +2025,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libscreencontrolservice.so",
             ],
             shared_libs: [
+                "libui_shim",
                 "vendor.amlogic.hardware.screencontrol@1.0",
                 "libbase",
                 "libutils",
@@ -2256,6 +2218,31 @@ cc_prebuilt_library_shared {
                 "libvendor_c2common",
                 "libstagefright_xmlparser",
                 "libsystemcontrolservice",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvendorfont_vendor",
+    stem: "libvendorfont",
+    owner: "amlogic",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libvendorfont.so",
+            ],
+            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -2624,7 +2611,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.amlogic.hardware.subtitleserver@1.0",
+    name: "vendor.amlogic.hardware.subtitleserver@1.0_vendor",
+    stem: "vendor.amlogic.hardware.subtitleserver@1.0",
     owner: "amlogic",
     strip: {
         none: true,
@@ -2788,6 +2776,30 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvendorfont",
+    owner: "amlogic",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/libvendorfont.so",
+            ],
+            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -3227,7 +3239,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.graphics.allocator-service",
             ],
             shared_libs: [
-                "android.hardware.graphics.common-V4-ndk",
+                "android.hardware.graphics.common-V6-ndk",
                 "android.hardware.graphics.common@1.2",
                 "libbase",
                 "liblog",
@@ -3359,7 +3371,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.memtrack-service.droidlogic",
             ],
             shared_libs: [
-                "libbase-v33",
+                "libbase",
                 "libbinder_ndk",
                 "libmemtrack-amlogic",
                 "android.hardware.memtrack-V1-ndk",
@@ -3932,4 +3944,11 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+}
+
+install_symlink {
+    name: "vendor_lib_hw_vulkan_amlogic_so",
+    soc_specific: true,
+    installed_location: "lib/hw/vulkan.amlogic.so",
+    symlink_target: "/vendor/lib/egl/libGLES_mali.so",
 }

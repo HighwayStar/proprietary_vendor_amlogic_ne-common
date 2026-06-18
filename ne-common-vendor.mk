@@ -75,7 +75,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.amlogic \
     mapper.arm \
     screen_source.amlogic \
-    vulkan.amlogic \
     libAmlAudioOutPort \
     libPQTableLD \
     libadap_lcd \
@@ -134,6 +133,7 @@ PRODUCT_PACKAGES += \
     libteec \
     libvendor_c2common \
     libvendor_c2componentstore \
+    libvendorfont_vendor \
     libvideotunnel \
     libbalance \
     libdpe \
@@ -146,12 +146,13 @@ PRODUCT_PACKAGES += \
     vendor.amlogic.hardware.droidvold@1.0 \
     vendor.amlogic.hardware.errormonitor@1.0 \
     vendor.amlogic.hardware.screencontrol@1.0 \
-    vendor.amlogic.hardware.subtitleserver@1.0 \
+    vendor.amlogic.hardware.subtitleserver@1.0_vendor \
     vendor.amlogic.hardware.systemcontrol@1.0 \
     vendor.amlogic.hardware.systemcontrol@1.1 \
     vendor.amlogic.hardware.tvserver@1.0 \
     libsubtitlebinder \
     libsubtitlemanager_jni \
+    libvendorfont \
     vendor.amlogic.hardware.subtitleserver@1.0 \
     droidlogic-tv \
     droidlogic.software.core \
@@ -201,3 +202,6 @@ PRODUCT_PACKAGES += \
     tee_preload_fw \
     tee_provision \
     tspacktest
+
+PRODUCT_PACKAGES += \
+    vendor_lib_hw_vulkan_amlogic_so
