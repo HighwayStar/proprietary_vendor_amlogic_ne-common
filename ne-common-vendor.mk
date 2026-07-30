@@ -35,7 +35,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/modules_load.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modules_load.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/power.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/power.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/screencontrol.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/screencontrol.rc \
-    vendor/amlogic/ne-common/proprietary/vendor/etc/init/subtitleserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/subtitleserver.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/sysfs_permissions.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sysfs_permissions.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/systemcontrol.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/systemcontrol.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
@@ -50,7 +49,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/etc/mesondisplay.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mesondisplay.cfg \
     vendor/amlogic/ne-common/proprietary/vendor/etc/permissions/android.software.cant_save_state.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.cant_save_state.xml \
     vendor/amlogic/ne-common/proprietary/vendor/etc/permissions/droidlogic.software.core.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/droidlogic.software.core.xml \
-    vendor/amlogic/ne-common/proprietary/vendor/etc/permissions/droidlogic.tv.software.core.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/droidlogic.tv.software.core.xml \
     vendor/amlogic/ne-common/proprietary/vendor/etc/remote.txt:$(TARGET_COPY_OUT_VENDOR)/etc/remote.txt \
     vendor/amlogic/ne-common/proprietary/vendor/etc/resman.json:$(TARGET_COPY_OUT_VENDOR)/etc/resman.json \
     vendor/amlogic/ne-common/proprietary/vendor/etc/seccomp_policy/android.hardware.amlogic.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.amlogic.media.c2@1.2-extended-seccomp-policy \
@@ -133,7 +131,6 @@ PRODUCT_PACKAGES += \
     libteec \
     libvendor_c2common \
     libvendor_c2componentstore \
-    libvendorfont_vendor \
     libvideotunnel \
     libbalance \
     libdpe \
@@ -146,15 +143,9 @@ PRODUCT_PACKAGES += \
     vendor.amlogic.hardware.droidvold@1.0 \
     vendor.amlogic.hardware.errormonitor@1.0 \
     vendor.amlogic.hardware.screencontrol@1.0 \
-    vendor.amlogic.hardware.subtitleserver@1.0_vendor \
     vendor.amlogic.hardware.systemcontrol@1.0 \
     vendor.amlogic.hardware.systemcontrol@1.1 \
     vendor.amlogic.hardware.tvserver@1.0 \
-    libsubtitlebinder \
-    libsubtitlemanager_jni \
-    libvendorfont \
-    vendor.amlogic.hardware.subtitleserver@1.0 \
-    droidlogic-tv \
     droidlogic.software.core \
     android.hardware.boot-service.droidlogic.xml \
     android.hardware.gatekeeper-service.amlogic.xml \
@@ -171,10 +162,7 @@ PRODUCT_PACKAGES += \
     memtrack-amlogic.xml \
     thermal.xml \
     vendor.amlogic.hardware.screencontrol@1.0.xml \
-    vendor.amlogic.hardware.subtitleserver@1.0.xml \
-    DecInfo_test \
     ddrtest \
-    esplayer \
     android.hardware.audio.service-droidlogic \
     android.hardware.bluetooth@1.1-service-droidlogic \
     android.hardware.boot-service \
@@ -189,7 +177,6 @@ PRODUCT_PACKAGES += \
     android.hardware.tv.hdmi.connection-service.droidlogic \
     android.hardware.usb-service.droidlogic \
     android.hardware.usb.gadget-service.droidlogic \
-    subtitleserver \
     modules_load \
     remotecfg \
     resmanload \

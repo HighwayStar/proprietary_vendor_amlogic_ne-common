@@ -362,6 +362,7 @@ cc_prebuilt_library_shared {
                 "libz",
                 "vendor.amlogic.hardware.errormonitor@1.0",
                 "liberrormonitorclient",
+                "libteec",
                 "vendor.amlogic.display.meson_display_ipc@1.0",
                 "libmeson_display_service",
                 "libc++",
@@ -463,6 +464,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libamaudioutils",
+                "libamaudioutils_boot",
                 "libc++",
                 "libc",
                 "libm",
@@ -725,6 +727,7 @@ cc_prebuilt_library_shared {
                 "libalsautils",
                 "libamlresampler",
                 "libaudioutils",
+                "libamaudioutils_boot",
                 "libc++",
                 "libc",
                 "libm",
@@ -887,6 +890,7 @@ cc_prebuilt_library_shared {
                 "libamaudioutils",
                 "libtinyalsa",
                 "libaudioutils",
+                "libamaudioutils_boot",
                 "libc++",
                 "libc",
                 "libm",
@@ -916,6 +920,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
+                "libamaudioutils_boot",
                 "libc++",
                 "libc",
                 "libm",
@@ -945,6 +950,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libamaudioutils",
                 "libsonic_ext",
+                "libamaudioutils_boot",
                 "libc++",
                 "libc",
                 "libm",
@@ -973,6 +979,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libamaudioutils",
+                "libamaudioutils_boot",
                 "libc++",
                 "libc",
                 "libm",
@@ -1852,6 +1859,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libamaudioutils",
+                "libamaudioutils_boot",
                 "libc++",
                 "libc",
                 "libm",
@@ -2232,31 +2240,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvendorfont_vendor",
-    stem: "libvendorfont",
-    owner: "amlogic",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvendorfont.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libvideotunnel",
     owner: "amlogic",
     strip: {
@@ -2612,35 +2595,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.amlogic.hardware.subtitleserver@1.0_vendor",
-    stem: "vendor.amlogic.hardware.subtitleserver@1.0",
-    owner: "amlogic",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.amlogic.hardware.subtitleserver@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.amlogic.hardware.systemcontrol@1.0",
     owner: "amlogic",
     strip: {
@@ -2722,131 +2676,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "32",
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsubtitlebinder",
-    owner: "amlogic",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libsubtitlebinder.so",
-            ],
-            shared_libs: [
-                "vendor.amlogic.hardware.subtitleserver@1.0",
-                "libbase",
-                "libhidlbase",
-                "liblog",
-                "libcutils",
-                "libutilscallstack",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsubtitlemanager_jni",
-    owner: "amlogic",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libsubtitlemanager_jni.so",
-            ],
-            shared_libs: [
-                "vendor.amlogic.hardware.subtitleserver@1.0",
-                "android.hidl.memory@1.0",
-                "libbase",
-                "libvendorfont",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvendorfont",
-    owner: "amlogic",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libvendorfont.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.amlogic.hardware.subtitleserver@1.0",
-    owner: "amlogic",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/vendor.amlogic.hardware.subtitleserver@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "droidlogic-tv",
-    owner: "amlogic",
-    jars: [
-        "proprietary/vendor/framework/droidlogic-tv.jar",
-    ],
     soc_specific: true,
 }
 
@@ -2994,70 +2823,11 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "vendor.amlogic.hardware.subtitleserver@1.0.xml",
-    owner: "amlogic",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.amlogic.hardware.subtitleserver@1.0.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "DecInfo_test",
-    owner: "amlogic",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/DecInfo_test",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
 sh_binary {
     name: "ddrtest",
     owner: "amlogic",
     src: "proprietary/vendor/bin/ddrtest.sh",
     filename: "ddrtest.sh",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "esplayer",
-    owner: "amlogic",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/esplayer",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
     soc_specific: true,
 }
 
@@ -3102,6 +2872,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-droidlogic",
             ],
             shared_libs: [
+                "libz",
                 "liblog",
                 "libcutils",
                 "libbase",
@@ -3174,6 +2945,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libbase",
+                "libz",
                 "libbinder_ndk",
                 "libcutils",
                 "libdumpstateutil",
@@ -3286,6 +3058,7 @@ cc_prebuilt_binary {
                 "libz",
                 "vendor.amlogic.hardware.errormonitor@1.0",
                 "liberrormonitorclient",
+                "libteec",
                 "android.hardware.graphics.composer3-V2-ndk",
                 "android.hardware.graphics.composer@2.1-resources-aidl",
                 "android.hardware.graphics.composer@2.2-resources-aidl",
@@ -3540,46 +3313,6 @@ cc_prebuilt_binary {
                 "android.frameworks.stats-V1-ndk",
                 "libcutils",
                 "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "subtitleserver",
-    owner: "amlogic",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/hw/subtitleserver",
-            ],
-            shared_libs: [
-                "libhidlmemory",
-                "libbinder",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libutilscallstack",
-                "libbase",
-                "libhidlbase",
-                "libtinyxml2",
-                "libpng",
-                "libfmq",
-                "vendor.amlogic.hardware.subtitleserver@1.0",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libmediahal_mediasync",
                 "libc++",
                 "libc",
                 "libm",
